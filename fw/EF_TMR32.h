@@ -15,6 +15,12 @@ void EF_TMR32_setGclkEnable (uint32_t tmr32_base, int value);
     */
 void EF_TMR32_enable(uint32_t tmr32_base);
 
+//! disables timer by setting "TE" bit in the CTRL register to 0 
+    /*!
+      \param tmr32_base The base memory address of TMR32 registers.
+    */
+void EF_TMR32_disable(uint32_t tmr32_base);
+
 //! enables timer re-start; used in the one-shot mode to restart the timer.
     /*!
       \param tmr32_base The base memory address of TMR32 registers.
